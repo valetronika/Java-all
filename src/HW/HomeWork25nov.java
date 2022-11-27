@@ -16,13 +16,15 @@ public class HomeWork25nov {
     //UPD Level One
     {
         int[] levelOneUpdate = new int[100];
-        levelOneUpdate[0] = 10;
-        levelOneUpdate[99] = 10;
-        for (int i = 1; i < 98; i++) {
-            levelOneUpdate[i] = 0;
-            System.out.println(Arrays.toString(levelOneUpdate));
+        levelOneUpdate[0] = 0;
+
+        for (int i = 1; i < levelOneUpdate.length; i++) {
+            levelOneUpdate[i] = 10;
         }
+        levelOneUpdate[98] = 0;
+        System.out.println(Arrays.toString(levelOneUpdate));
     }
+
     //Level Two-------------------
     {
         String[] levelTwo = new String[100];
