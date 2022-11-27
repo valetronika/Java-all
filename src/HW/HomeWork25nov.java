@@ -1,7 +1,7 @@
 package HW;
 
 import java.util.Arrays;
-import java.util.Set;
+
 
 public class HomeWork25nov {
     public static void main(String[] args) {
@@ -10,11 +10,13 @@ public class HomeWork25nov {
         for (int i = 1; i < 100; i++) {
             levelOne[i] = String.valueOf(0);
         }
+        System.out.println("LevelOne");
         System.out.println(Arrays.toString(levelOne));
     }
 
     //UPD Level One
-    {
+
+    static {
         int[] levelOneUpdate = new int[100];
         levelOneUpdate[0] = 0;
 
@@ -22,29 +24,31 @@ public class HomeWork25nov {
             levelOneUpdate[i] = 10;
         }
         levelOneUpdate[98] = 0;
+        System.out.println("levelOneUpd:");
         System.out.println(Arrays.toString(levelOneUpdate));
     }
 
     // Level Two-------------------
-    {
+    static {
         int[] levelTwo = new int[100]; //UPD тут я тоже неправильно пррочитала условие:(тут только на1,2,3 которые кончаются? можно было бы продолжить но это как то не так..
         levelTwo[0] = (0);
         int sum = 0;
-        for (int i = 0; i < 100; i++) {
-            if (i % 10 == 1) {
-                levelTwo[i] = (111);
-            } else if (i % 10 == 2) {
-                levelTwo[i] = (222);
-            } else if (i % 10 == 3) {
-                levelTwo[i] = (333);
+        for (int x = 0; x < 100; x++) {
+            if (x % 10 == 1) {
+                levelTwo[x] = (111);
+            } else if (x % 10 == 2) {
+                levelTwo[x] = (222);
+            } else if (x % 10 == 3) {
+                levelTwo[x] = (333);
             } else {
-                levelTwo[i] = (0);
+                levelTwo[x] = (0);
             }
-            int num = Integer.parseInt(String.valueOf(levelTwo[i]));
+            int num = Integer.parseInt(String.valueOf(levelTwo[x]));
             sum = num + sum;
         }
         System.out.println("Sum " + sum);
         //LevelTwoUpdate
+        //
         {
             int[] levelTwoUpd = new int[100];
             levelTwoUpd[0] = 111;
@@ -58,8 +62,8 @@ public class HomeWork25nov {
                 int numTwo = levelTwoUpd[i];
                 sumTwo = sumTwo + numTwo;
             }
-            System.out.println(Arrays.toString(levelTwoUpd));
-            System.out.println(sumTwo);
+            System.out.println("levelTwoUpd: " + Arrays.toString(levelTwoUpd));
+            System.out.println("levelTwoUpd: " + sumTwo);
 
         }
     }
