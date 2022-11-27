@@ -25,7 +25,7 @@ public class HomeWork25nov {
         System.out.println(Arrays.toString(levelOneUpdate));
     }
 
-    //    Level Two-------------------
+    // Level Two-------------------
     {
         int[] levelTwo = new int[100]; //UPD тут я тоже неправильно пррочитала условие:(тут только на1,2,3 которые кончаются? можно было бы продолжить но это как то не так..
         levelTwo[0] = (0);
@@ -44,18 +44,28 @@ public class HomeWork25nov {
             sum = num + sum;
         }
         System.out.println("Sum " + sum);
-        //        LevelTwoUpdate
-//        int[] levelTwoUpd = new int[100];
-//        levelTwoUpd[0] = ((0));
-//        int sumTwo = 0;
-//        for (int i = 1; i < 100; i++) {
-//            if (i%10 == 1)
-//
-//        }
-//        System.out.println(Arrays.toString(levelTwoUpd));
-        }
+        //LevelTwoUpdate
+        {
+            int[] levelTwoUpd = new int[100];
+            levelTwoUpd[0] = 111;
+            int sumTwo = 0;
+            for (int i = 1; i < levelTwoUpd.length; i++) {
+                if (levelTwoUpd[i - 1] < 1000) {
+                    levelTwoUpd[i] = levelTwoUpd[i - 1] + 111;
+                } else {
+                    levelTwoUpd[i] = 111;
+                }
+                int numTwo = levelTwoUpd[i];
+                sumTwo = sumTwo + numTwo;
+            }
+            System.out.println(Arrays.toString(levelTwoUpd));
+            System.out.println(sumTwo);
 
+        }
     }
+}
+
+
 
 
 
