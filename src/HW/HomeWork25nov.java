@@ -25,27 +25,38 @@ public class HomeWork25nov {
         System.out.println(Arrays.toString(levelOneUpdate));
     }
 
-    //Level Two-------------------
+    //    Level Two-------------------
     {
-        String[] levelTwo = new String[100];
-        levelTwo[0] = String.valueOf(0);
+        int[] levelTwo = new int[100]; //UPD тут я тоже неправильно пррочитала условие:(тут только на1,2,3 которые кончаются? можно было бы продолжить но это как то не так..
+        levelTwo[0] = (0);
         int sum = 0;
         for (int i = 0; i < 100; i++) {
             if (i % 10 == 1) {
-                levelTwo[i] = String.valueOf(111);
+                levelTwo[i] = (111);
             } else if (i % 10 == 2) {
-                levelTwo[i] = String.valueOf(222);
+                levelTwo[i] = (222);
             } else if (i % 10 == 3) {
-                levelTwo[i] = String.valueOf(333);
+                levelTwo[i] = (333);
             } else {
-                levelTwo[i] = String.valueOf(0);
+                levelTwo[i] = (0);
             }
             int num = Integer.parseInt(String.valueOf(levelTwo[i]));
             sum = num + sum;
         }
-        System.out.println("Sum" + sum);
+        System.out.println("Sum " + sum);
+        //        LevelTwoUpdate
+//        int[] levelTwoUpd = new int[100];
+//        levelTwoUpd[0] = ((0));
+//        int sumTwo = 0;
+//        for (int i = 1; i < 100; i++) {
+//            if (i%10 == 1)
+//
+//        }
+//        System.out.println(Arrays.toString(levelTwoUpd));
+        }
+
     }
-}
+
 
 
 
