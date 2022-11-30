@@ -15,18 +15,23 @@ public class HW28nov {
         System.out.println(second);
         System.out.println(third);
     }
-    public static int findFirstNumber( int a ) {
+
+    public static int findFirstNumber(int a) {
         return a / 100;
     }
+
     public static int findSecondNumber(int a) {
         return a / 10 % 10;
     }
+
     public static int findThirdNumber(int a) {
         return a % 10;
     }
+
     public static void text() {
         System.out.println("Введите число : ");
     }
+
     public static int getNumberFromConsole() {
         Scanner scanner = new Scanner(System.in);
         text();
