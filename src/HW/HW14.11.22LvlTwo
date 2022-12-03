@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class HomeWorkLevelTwo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" Enter letters - only 'A' or 'B' ");
+        String letters = scanner.next();
+        String lettersReplace = ( letters.toLowerCase ());
+        lettersReplace = lettersReplace.replace('a', 'B');
+        lettersReplace = lettersReplace.replace('b', 'A');
+        System.out.println( lettersReplace );
+
+        //or  .............→
+
+
+        String stringOne = "AAABBB";
+        String newString = ( stringOne.toLowerCase ());
+        newString = newString.replace('a', 'B');
+        newString = newString.replace('b', 'A');
+
+        System.out.println( newString );
+
+
+    }
+}
