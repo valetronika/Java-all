@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class HomeWorkLevelTwo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number for the first spin");
+        int firstSpin = scanner.nextInt();
+        System.out.println("Enter a number for the second spin");
+        int secondSpin = scanner.nextInt();
+        System.out.println(" Loading...");
+        if (firstSpin == 36 && secondSpin == 17){
+            System.out.println("You won the Jackpot!!!");
+            System.out.println("☺☺☺☺☺");
+        }
+        else if (firstSpin == 36 || secondSpin == 17){
+            System.out.println(" You won the Doll");
+        }
+        else {
+            System.out.println(" Sorry, you didn't win");
+            System.out.println(" :(");
+        }
+
+    }
+}
