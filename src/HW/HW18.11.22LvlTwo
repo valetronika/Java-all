@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class HomeWorkLevelTwo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter data...");
+        String data = scanner.nextLine();
+        int length = data.length();
+        String letter = String.valueOf(data.charAt(0));
+        while (length > 0) {
+            System.out.println(letter);
+            length--;
+        }
+    }
+}
