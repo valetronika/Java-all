@@ -1,0 +1,21 @@
+public class LevelTwo {
+    public static void main(String[] args) {
+
+    long lifeInSecond = ( 3_011_456_567L);
+    long lifeInMinute = ( lifeInSecond / 60 );
+    long lifeInHours = ( lifeInMinute / 60);
+    long lifeInDays = ( lifeInHours / 24);
+    long lifeInMounts = ( lifeInDays / 30);
+    long lifeInYears = ( lifeInMounts / 12);
+
+        System.out.println( lifeInYears);
+        System.out.println(" -----OR------");
+
+    int minutesInYear = (525960);
+    int secondsInYear = ( minutesInYear * 60);
+
+        System.out.println( lifeInSecond / secondsInYear);
+
+    }
+
+}
