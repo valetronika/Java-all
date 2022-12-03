@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class HomeWork {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter info");
+        String info = scanner.nextLine();
+        int length = info.length();
+        boolean comparing = (length > 10);
+        System.out.println(comparing);
+
+
+        System.out.println("Enter second info");
+        String secondInfo = scanner.next();
+        String comparingFirst = String.valueOf(secondInfo.charAt(0));
+        boolean comparingTwo = (secondInfo.endsWith(comparingFirst));
+        System.out.println(comparingTwo);
+
+    }
+}
