@@ -1,0 +1,11 @@
+public class LevelOne {
+    public static void main(String[] args) {
+        int finishPoint = ( 5 );
+        int asterks = ( 3 );
+        double obeliks = ( asterks / 2);
+        double together = ( asterks + obeliks);
+        boolean score = (together >= finishPoint);
+
+        System.out.println(score);
+    }
+}
