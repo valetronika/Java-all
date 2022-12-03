@@ -1,0 +1,10 @@
+
+
+public class LevelOne {
+    public static void main(String[] args) {
+        long peopleInChina = (1_411_778_724L);
+        int countries = ( 197);
+        long peopleInEarth = ( peopleInChina * countries );
+        System.out.println( peopleInEarth);
+    }
+}
